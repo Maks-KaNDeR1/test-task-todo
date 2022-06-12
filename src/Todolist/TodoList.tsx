@@ -19,7 +19,8 @@ type PropsType = {
 }
 
 export const Todolist: React.FC<PropsType> = (
-    { todos, changeFilter, addTodos, onChangeCheckboxStatus, filter, ClearComplited }) => {
+    { todos, changeFilter, addTodos, onChangeCheckboxStatus, filter, ClearComplited }
+) => {
 
     const [newTodos, setNewTodos] = useState('')
     const [error, setError] = useState(false)

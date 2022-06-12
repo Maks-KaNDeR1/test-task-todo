@@ -28,12 +28,10 @@ function App() {
         const newTodos = { id: +new Date(), title: newTodosTitle, isDone: false }
         setTodos([newTodos, ...todos])
     }
-    
+
     const changeFilter = (value: FilterValueType) => {
         setFilter(value)
     }
-
-
 
     let todosForTodolist = todos
     if (filter === 'active') {
@@ -42,7 +40,6 @@ function App() {
     if (filter === 'completed') {
         todosForTodolist = todos.filter(t => t.isDone === true)
     }
-
 
 
     return (
