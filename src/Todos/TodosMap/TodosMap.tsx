@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from 'react'
-import { TodosType } from '../TodoList'
+import { TodosType } from '../../state/todos-reducer'
 import style from './TodosMap.module.scss'
 
 

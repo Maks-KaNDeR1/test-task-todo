@@ -1,16 +1,12 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from 'react';
 import { FilterValueType } from '../App';
 import TodosMap from './TodosMap/TodosMap';
-import style from './Todolist.module.scss'
+import style from './Todos.module.scss'
+import { TodosType } from '../state/todos-reducer';
 
-export type TodosType = {
-    id: number
-    title: string
-    isDone: boolean
-}
 
 type PropsType = {
-    todos: Array<TodosType>
+    todos: TodosType[]
     changeFilter: (value: FilterValueType) => void
     addTodos: (newTaskTitle: string) => void
     onChangeCheckboxStatus: (id: number, value: boolean) => void
